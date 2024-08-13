@@ -351,10 +351,9 @@ table th, tr{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap:12px;
-    margin-left: 30px;
 }
 form input{
-    width: 282.5px;
+    width:290px;
     height: 48px;
     background: none;
     border-radius: 8px;
@@ -368,9 +367,8 @@ form input{
     padding:20px;
 }
 #fifth{
-    width: 610px;
+    width: 630px;
     margin-top: 12px;
-    margin-left: 30px;
 }
 /* meet section styles */
 .meet-container{
