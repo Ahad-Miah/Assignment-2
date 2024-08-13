@@ -263,3 +263,22 @@ nav .home{
     width:100%;
     border-radius: 18px;
 }
+/* about calculator section styles */
+.about-calculator{
+    width:60%;
+    margin:0px auto;
+    margin-bottom: 85px;
+}
+.about-calculator h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.about-calculator p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+}
