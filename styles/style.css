@@ -218,3 +218,48 @@ nav .home{
     font-size: 14px;
     font-weight: 400;
 }
+/* features section style */
+.features-container{
+    max-width: 80%;
+    height:400px;
+    margin:0px auto;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 18px;
+    background-color:  rgb(34, 34, 34);
+}
+.features-content h2{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.features-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.features-content button{
+    border-radius: 42px;
+    background-color:  rgb(230, 83, 60);
+    border:none;
+    width: 224px;
+    height: 54px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+}
+.features-img{
+    width:43%;
+    height:300px;
+}
+.features-img img{
+    width:100%;
+    border-radius: 18px;
+}
