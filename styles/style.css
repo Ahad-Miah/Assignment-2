@@ -285,7 +285,7 @@ nav .home{
 /* calculator styles */
 .calculator-container{
     max-width:100%;
-    height:400px;
+    height:500px;
     background-color: rgb(34, 34, 34);
     display:flex;
     align-items: center;
@@ -345,7 +345,7 @@ table th, tr{
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 .form{
     display:grid;
@@ -357,7 +357,7 @@ form{
 }
 form input{
     width:100%;
-    height: 48px;
+    height: 40px;
     background: none;
     border-radius: 8px;
     background-color:  rgba(255, 255, 255, 0.1);
@@ -372,6 +372,19 @@ form input{
 #fifth{
     width: 100%;
     margin-top: 12px;
+}
+form button{
+    border-radius: 42px;
+    background: none;
+    background-color:  rgb(230, 83, 60);
+    border:none;
+    width: 224px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
 }
 /* meet section styles */
 .meet-container{
@@ -491,4 +504,87 @@ hr{
     font-size: 18px;
     font-weight: 400;
     text-align: center;
+}
+/* challenge section styles */
+.challenge-container{
+    max-width: 90%;
+    height:600px;
+    margin:0px auto;
+    margin-bottom: 40px;
+}
+.classes{
+    width:100%;
+    margin-top: 30px;
+    text-align: center;
+}
+.classes h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+}
+.classes p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
+}
+.class-type{
+    width:90%;
+    height:400px;
+    margin:0px auto;
+    margin-top: 40px;
+    display:flex;
+    justify-content: space-around;
+}
+.class-card{
+    width:30%;
+    height:390px;
+    margin:auto;
+}
+.class-card .img{
+    width:100%;
+    height:50%;
+}
+.class-card img{
+    width:100%;
+    height:100%;
+}
+.card-content h3{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-content button{
+    width:200px;
+    height:50px;
+    background: none;
+    border:none;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.card-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.281);
 }
