@@ -15,8 +15,11 @@ header{
     background-image:  linear-gradient(180.00deg, rgba(94, 91, 91, 0.384),rgb(0, 0, 0) 100%);
 }
 /* nav section style */
+.bars{
+    display:none;
+}
 nav{
-    width:80%;
+    max-width:80%;
     margin:0px auto;
     display:flex;
     justify-content: space-between;
@@ -161,8 +164,7 @@ nav .home{
 /* main section style */
 /* habit section style */
 .habit-container{
-    max-width: 80%;
-    height:500px;
+    max-width: 1100px;
     margin:0px auto;
     display:flex;
     flex-direction: column;
@@ -185,22 +187,25 @@ nav .home{
     text-align: center;
 }
 .how-to-change{
-    max-width:100%;
-    height:340px;
+    max-width:1100px;
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
 .change-step{
-    width:20%;
+    max-width:250px;
     text-align: center;
     margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .change-img{
-    width:100%;
-    height:200px;
+    width:90%;
+    /* height:200px; */
     border-radius: 50%;
-    margin-bottom: 40px;
+    margin-bottom:20px;
 }
 .change-img img{
     width:100%;
@@ -220,13 +225,14 @@ nav .home{
 }
 /* features section style */
 .features-container{
-    max-width: 80%;
-    height:400px;
+    max-width: 1100px;
+    padding:40px 0px;
     margin:0px auto;
     margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap:100px;
     border-radius: 18px;
     background-color:  rgb(34, 34, 34);
 }
@@ -256,7 +262,7 @@ nav .home{
     font-weight: 600;
 }
 .features-img{
-    width:43%;
+    max-width:450px;
     height:300px;
 }
 .features-img img{
@@ -284,7 +290,7 @@ nav .home{
 }
 /* calculator styles */
 .calculator-container{
-    max-width:100%;
+    max-width:1349px;
     height:500px;
     background-color: rgb(34, 34, 34);
     display:flex;
@@ -388,8 +394,7 @@ form button{
 }
 /* meet section styles */
 .meet-container{
-    width:80%;
-    height:800px;
+    max-width:1100px;
     margin:0px auto;
     margin-bottom: 85px;
 }
@@ -412,13 +417,13 @@ form button{
     font-weight: 400;
 }
 .meet-them{
-    width:100%;
-    height:670px;
+    max-width:1100px;
     display:grid;
     box-sizing: border-box;
     grid-template-columns: repeat(3,1fr);
     gap:10px;
-    padding:20px;
+    row-gap: 20px;
+    padding:25px;
     border-radius: 18px;
     background-color:  rgba(255, 255, 255, 0.1);
 }
@@ -452,8 +457,7 @@ form button{
 }
 /* footer styles */
 footer{
-    width:1345px;
-    height:480px;
+    max-width:1345px;
     border:1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -493,7 +497,7 @@ footer{
     margin-bottom: 25px;
 }
 hr{
-    width:80%;
+    max-width:80%;
     margin:0px auto;
     border: 2px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 30px;
@@ -504,16 +508,16 @@ hr{
     font-size: 18px;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 40px;
 }
 /* challenge section styles */
 .challenge-container{
-    max-width: 90%;
-    height:600px;
+    max-width: 1200px;
     margin:0px auto;
     margin-bottom: 40px;
 }
 .classes{
-    width:100%;
+    max-width:100%;
     margin-top: 30px;
     text-align: center;
 }
@@ -532,16 +536,16 @@ hr{
     font-style: italic;
 }
 .class-type{
-    width:90%;
-    height:400px;
+    max-width:1080px;
     margin:0px auto;
     margin-top: 40px;
     display:flex;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 .class-card{
     width:30%;
-    height:390px;
+    height:380px;
     margin:auto;
 }
 .class-card .img{
@@ -587,4 +591,138 @@ hr{
     justify-content: center;
     align-items: center;
     background-color: rgba(250, 235, 215, 0.281);
+}
+/* responsive */
+@media screen and (max-width:576px){
+    nav ul{
+        display:none;
+    }
+    nav .bars{
+        display:block;
+    }
+    nav{
+        display:flex;
+        gap:100px;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-container h1{
+        font-size: 36px;
+    }
+    .banner-container p{
+        font-size: 16px;
+        break-after:
+    }
+    .banner-btn{
+        display:flex;
+        justify-content: space-around;
+    }
+    .banner-btn button{
+        width:180px;
+    }
+    .card-1{
+        position:absolute;
+        width:150px;
+        top:10%;
+        right:5%;
+    }
+    .card-2{
+        position:absolute;
+        top:40%;
+        left:6%;
+    }
+    .how-to-change{
+        display:flex;
+        flex-direction: column;
+    }
+    .habit-container{
+        margin-top: 0px;
+    }
+    .features-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .features-img{
+        max-width:350px;
+        height:300px;
+        margin-bottom: -80px;
+    }
+    .features-content button{
+        margin-left: 10px;
+        width:360px;
+    }
+    .about-calculator h1{
+        font-size: 30px;
+    }
+    .about-calculator{
+        margin-right: 160px;
+    }
+    .calculator-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items:start;
+        margin-bottom: 300px;
+    }
+    .bmi-chart{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .bmi-chart table{
+        margin-left: 150px;
+    }
+    .bmi-chart h3{
+        font-size: 13px;
+    }
+    .calculate{
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    .calculate h3{
+        font-size: 12px;
+    }
+    .calculate p{
+        font-size: 10px;
+    }
+    .form input{
+        width:190px;
+    }
+    #fifth{
+        width:390px;
+    }
+    .meet-description h1{
+        font-size: 36px;
+    }
+    .meet-description p{
+        font-size: 8px;
+    }
+    .meet-them{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .class-type{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 100px;
+    }
+    .class-card button{
+        width:150px;
+        font-size: 15px;
+    }
+    .class-card{
+        margin-bottom: 100px;
+    }
+    .footer{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    footer{
+        margin-top: -50px;
+    }
+
+    
+
 }
