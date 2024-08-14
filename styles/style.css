@@ -291,7 +291,7 @@ nav .home{
 /* calculator styles */
 .calculator-container{
     max-width:1349px;
-    height:500px;
+    padding:60px;
     background-color: rgb(34, 34, 34);
     display:flex;
     align-items: center;
@@ -666,7 +666,7 @@ hr{
         flex-direction: column;
         justify-content: left;
         align-items:start;
-        margin-bottom: 300px;
+        margin-bottom: 70px;
     }
     .bmi-chart{
         margin-left: 30px;
@@ -676,7 +676,7 @@ hr{
         margin-left: 150px;
     }
     .bmi-chart h3{
-        font-size: 13px;
+        font-size: 12px;
     }
     .calculate{
         margin-left: 30px;
@@ -698,7 +698,7 @@ hr{
         font-size: 36px;
     }
     .meet-description p{
-        font-size: 8px;
+        font-size: 17px;
     }
     .meet-them{
         grid-template-columns: repeat(1,1fr);
@@ -721,6 +721,9 @@ hr{
     }
     footer{
         margin-top: -50px;
+    }
+    #card{
+        margin-bottom: 150px;
     }
 
     
